@@ -1,0 +1,18 @@
+#-----------------------------------------------------------
+# Vivado v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Tue Oct 13 06:39:02 2020
+# Process ID: 1913
+# Current directory: /home/op/fpga/one
+# Command line: vivado
+# Log file: /home/op/fpga/one/vivado.log
+# Journal file: /home/op/fpga/one/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/op/fpga/one/blink/blink.xpr
+update_compile_order -fileset sources_1
+open_run impl_1
+close_project
+create_project uart /home/op/fpga/one/uart -part xc7a35tcpg236-1
+set_property board_part digilentinc.com:basys3:part0:1.1 [current_project]

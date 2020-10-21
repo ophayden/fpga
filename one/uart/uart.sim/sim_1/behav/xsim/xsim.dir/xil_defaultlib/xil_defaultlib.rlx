@@ -1,0 +1,9 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/op/fpga/UART_232/src/TOP.v,1602859055,verilog,,,,TOP,,,,,,,,
+/home/op/fpga/UART_232/src/UART_baudrate_generator.v,1602423811,verilog,,/home/op/fpga/UART_232/src/UART_rx.v,,UART_BaudRate_generator,,,,,,,,
+/home/op/fpga/UART_232/src/UART_rx.v,1602423811,verilog,,/home/op/fpga/UART_232/src/UART_tx.v,,UART_rs232_rx,,,,,,,,
+/home/op/fpga/UART_232/src/UART_tx.v,1602423811,verilog,,/home/op/fpga/UART_232/src/TOP.v,,UART_rs232_tx,,,,,,,,
+/home/op/fpga/one/uart/uart.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35tcpg236-1" LaunchTime="1600736491">
+  <File Type="ROUTE-ERROR-DCP" Name="blinktop_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="blinktop_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="blinktop_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="blinktop_drc_routed.rpt"/>
+  <File Type="BITSTR-LTX" Name="blinktop.ltx"/>
+  <File Type="ROUTE-DRC-RPX" Name="blinktop_drc_routed.rpx"/>
+  <File Type="RDI-RDI" Name="blinktop.vdi"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="blinktop_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="blinktop.msk"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="blinktop_incremental_reuse_pre_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="blinktop_methodology_drc_routed.rpx"/>
+  <File Type="OPT-DRC" Name="blinktop_drc_opted.rpt"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <File Type="PA-TCL" Name="blinktop.tcl"/>
+  <File Type="REPORTS-TCL" Name="blinktop_reports.tcl"/>
+  <File Type="ROUTE-BUS-SKEW" Name="blinktop_bus_skew_routed.rpt"/>
+  <File Type="BG-BIT" Name="blinktop.bit"/>
+  <File Type="PLACE-IO" Name="blinktop_io_placed.rpt"/>
+  <File Type="OPT-HWDEF" Name="blinktop.hwdef"/>
+  <File Type="PWROPT-DCP" Name="blinktop_pwropt.dcp"/>
+  <File Type="BG-BIN" Name="blinktop.bin"/>
+  <File Type="PLACE-CTRL" Name="blinktop_control_sets_placed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="blinktop_methodology_drc_routed.pb"/>
+  <File Type="PLACE-DCP" Name="blinktop_placed.dcp"/>
+  <File Type="BG-BGN" Name="blinktop.bgn"/>
+  <File Type="PLACE-UTIL" Name="blinktop_utilization_placed.rpt"/>
+  <File Type="OPT-DCP" Name="blinktop_opt.dcp"/>
+  <File Type="BG-DRC" Name="blinktop.drc"/>
+  <File Type="PLACE-UTIL-PB" Name="blinktop_utilization_placed.pb"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="blinktop_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="blinktop_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="blinktop_postroute_physopt.dcp"/>
+  <File Type="BITSTR-MMI" Name="blinktop.mmi"/>
+  <File Type="BITSTR-SYSDEF" Name="blinktop.sysdef"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="blinktop_postroute_physopt_bb.dcp"/>
+  <File Type="BITSTR-BMM" Name="blinktop_bd.bmm"/>
+  <File Type="BITSTR-NKY" Name="blinktop.nky"/>
+  <File Type="PHYSOPT-DCP" Name="blinktop_physopt.dcp"/>
+  <File Type="BITSTR-RBT" Name="blinktop.rbt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="blinktop_bus_skew_routed.pb"/>
+  <File Type="ROUTE-CLK" Name="blinktop_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-TIMING-RPX" Name="blinktop_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-TIMING-PB" Name="blinktop_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="blinktop_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="blinktop_route_status.pb"/>
+  <File Type="ROUTE-STATUS" Name="blinktop_route_status.rpt"/>
+  <File Type="ROUTE-PWR-RPX" Name="blinktop_power_routed.rpx"/>
+  <File Type="ROUTE-PWR-SUM" Name="blinktop_power_summary_routed.pb"/>
+  <File Type="ROUTE-PWR" Name="blinktop_power_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="blinktop_drc_routed.pb"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/blinktop.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="blinktop"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PPRDIR/../../xdcs/swled.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream">
+      <Option Id="BinFile">1</Option>
+    </Step>
+  </Strategy>
+</GenRun>

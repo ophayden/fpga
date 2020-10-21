@@ -1,0 +1,260 @@
+/*
+
+Xilinx Vivado v2019.1 (64-bit) [Major: 2019, Minor: 1]
+SW Build: 2552052 on Fri May 24 14:47:09 MDT 2019
+IP Build: 2548770 on Fri May 24 18:01:18 MDT 2019
+
+Process ID (PID): 1913
+License: Customer
+
+Current time: 	Tue Oct 13 06:39:18 MDT 2020
+Time zone: 	Mountain Standard Time (America/Denver)
+
+OS: Ubuntu
+OS Version: 5.4.0-48-generic
+OS Architecture: amd64
+Available processors (cores): 8
+
+Display: :0
+Screen size: 1920x1080
+Screen resolution (DPI): 97
+Available screens: 1
+Available disk space: 180 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=15
+
+Java version: 	9.0.4 64-bit
+Java home: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4
+Java executable location: 	/tools/Xilinx/Vivado/2019.1/tps/lnx64/jre9.0.4/bin/java
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	op
+User home directory: /home/op
+User working directory: /home/op/fpga/one
+User country: 	US
+User language: 	en
+User locale: 	en_US
+
+RDI_BASEROOT: /tools/Xilinx/Vivado
+HDI_APPROOT: /tools/Xilinx/Vivado/2019.1
+RDI_DATADIR: /tools/Xilinx/Vivado/2019.1/data
+RDI_BINDIR: /tools/Xilinx/Vivado/2019.1/bin
+
+Vivado preferences file location: /home/op/.Xilinx/Vivado/2019.1/vivado.xml
+Vivado preferences directory: /home/op/.Xilinx/Vivado/2019.1/
+Vivado layouts directory: /home/op/.Xilinx/Vivado/2019.1/layouts
+PlanAhead jar file location: 	/tools/Xilinx/Vivado/2019.1/lib/classes/planAhead.jar
+Vivado log file location: 	/home/op/fpga/one/vivado.log
+Vivado journal file location: 	/home/op/fpga/one/vivado.jou
+Engine tmp dir: 	./.Xil/Vivado-1913-pub
+
+Xilinx Environment Variables
+----------------------------
+XILINX: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_DSP: /tools/Xilinx/Vivado/2019.1/ids_lite/ISE
+XILINX_PLANAHEAD: /tools/Xilinx/Vivado/2019.1
+XILINX_SDK: /tools/Xilinx/SDK/2019.1
+XILINX_VIVADO: /tools/Xilinx/Vivado/2019.1
+XILINX_VIVADO_HLS: /tools/Xilinx/Vivado/2019.1
+
+
+GUI allocated memory:	185 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 882 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// by (cl):  Open Project : addNotify
+// Opening Vivado Project: /home/op/fpga/one/blink/blink.xpr. Version: Vivado v2019.1 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project /home/op/fpga/one/blink/blink.xpr 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_COMPLETED
+// TclEventType: RUN_STATUS_CHANGE
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// [GUI Memory]: 84 MB (+85121kb) [00:00:10]
+// [Engine Memory]: 956 MB (+851073kb) [00:00:10]
+// [GUI Memory]: 98 MB (+10273kb) [00:00:10]
+// [GUI Memory]: 105 MB (+2933kb) [00:00:11]
+// WARNING: HEventQueue.dispatchEvent() is taking  2731 ms.
+// Tcl Message: open_project /home/op/fpga/one/blink/blink.xpr 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 1,009 MB. GUI used memory: 55 MB. Current time: 10/13/20, 6:39:23 AM MDT
+// [Engine Memory]: 1,011 MB (+7690kb) [00:00:13]
+// Project name: blink; location: /home/op/fpga/one/blink; part: xc7a35tcpg236-1
+// [GUI Memory]: 111 MB (+113kb) [00:00:13]
+dismissDialog("Open Project"); // by (cl)
+// [Engine Memory]: 1,068 MB (+6137kb) [00:00:15]
+// Tcl Message: update_compile_order -fileset sources_1 
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design]", 18, true); // u (O, cl) - Node
+// Run Command: PAResourceCommand.PACommandNames_GOTO_IMPLEMENTED_DESIGN
+// bw (cl): Implementation is Out-of-date: addNotify
+selectButton(PAResourceQtoS.StaleRunDialog_YES, "Yes"); // a (bw)
+// by (cl):  Open Implemented Design : addNotify
+dismissDialog("Implementation is Out-of-date"); // bw (cl)
+// Tcl Message: open_run impl_1 
+// TclEventType: SDC_CONSTRAINT_ADD
+// TclEventType: POWER_CNS_STALE
+// TclEventType: FLOORPLAN_MODIFY
+// TclEventType: DESIGN_NEW
+// HMemoryUtils.trashcanNow. Engine heap size: 1,772 MB. GUI used memory: 57 MB. Current time: 10/13/20, 6:39:36 AM MDT
+// [Engine Memory]: 1,784 MB (+695504kb) [00:00:25]
+// TclEventType: HFED_INIT_ROUTE_STORAGE_COMPLETED
+// TclEventType: DESIGN_NEW
+// Xgd.load filename: /tools/Xilinx/Vivado/2019.1/data/parts/xilinx/artix7/devint/artix7/xc7a35t/xc7a35t.xgd; ZipEntry: xc7a35t_detail.xgd elapsed time: 0.6s
+// [Engine Memory]: 1,953 MB (+83125kb) [00:00:27]
+// Device: addNotify
+// [GUI Memory]: 117 MB (+479kb) [00:00:28]
+// DeviceView Instantiated
+// [GUI Memory]: 131 MB (+8509kb) [00:00:28]
+// WARNING: HEventQueue.dispatchEvent() is taking  1831 ms.
+// TclEventType: CURR_DESIGN_SET
+// Tcl Message: INFO: [Device 21-403] Loading part xc7a35tcpg236-1 INFO: [Netlist 29-17] Analyzing 9 Unisim elements for replacement INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds INFO: [Project 1-479] Netlist was created with Vivado 2019.1 INFO: [Project 1-570] Preparing netlist for logic optimization INFO: [Timing 38-478] Restoring timing data from binary archive. INFO: [Timing 38-479] Binary timing data restore complete. INFO: [Project 1-856] Restoring constraints from binary archive. INFO: [Project 1-853] Binary constraint restore complete. 
+// Tcl Message: Reading XDEF placement. Reading placer database... Reading XDEF routing. 
+// Tcl Message: Read XDEF File: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7269.238 ; gain = 0.000 ; free physical = 12151 ; free virtual = 15727 
+// Tcl Message: Restored from archive | CPU: 0.010000 secs | Memory: 0.080620 MB | 
+// Tcl Message: Finished XDEF File Restore: Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 7269.238 ; gain = 0.000 ; free physical = 12151 ; free virtual = 15727 Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 7269.238 ; gain = 0.000 ; free physical = 12151 ; free virtual = 15728 
+// Tcl Message: INFO: [Project 1-111] Unisim Transformation Summary: No Unisim elements were transformed.  
+// RouteApi: Init Delay Mediator Swing Worker Finished
+// TclEventType: DRC_ADDED
+// Device view-level: 0.0
+// Tcl Message: open_run: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 7452.594 ; gain = 917.363 ; free physical = 12042 ; free virtual = 15623 
+// TclEventType: DRC_ADDED
+// TclEventType: METHODOLOGY_ADDED
+// [GUI Memory]: 143 MB (+5662kb) [00:00:29]
+// TclEventType: POWER_UPDATED
+// TclEventType: TIMING_SUMMARY_UPDATED
+// 'dR' command handler elapsed time: 14 seconds
+// Device view-level: 0.1
+// Device view-level: 0.0
+// Elapsed time: 13 seconds
+dismissDialog("Open Implemented Design"); // by (cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Report DRC]", 25, false); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Program and Debug, Generate Bitstream]", 31, false); // u (O, cl)
+selectTree(PAResourceEtoH.FlowNavigatorTreePanel_FLOW_NAVIGATOR_TREE, "[, Implementation, Open Implemented Design, Schematic]", 29, false); // u (O, cl)
+// Run Command: PAResourceCommand.PACommandNames_SCHEMATIC
+// Schematic: addNotify
+// [GUI Memory]: 156 MB (+6203kb) [00:00:38]
+// Elapsed time: 755 seconds
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_TOOLS, "Tools"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FLOW, "Flow"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_EDIT, "Edit"); // Z (q, cl)
+selectMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,985 MB. GUI used memory: 90 MB. Current time: 10/13/20, 6:52:35 AM MDT
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenu(PAResourceItoN.MainMenuMgr_PROJECT, "Project"); // ae (cl)
+selectMenuItem(PAResourceCommand.PACommandNames_NEW_PROJECT, "New..."); // ah (cl)
+dismissMenu(PAResourceItoN.MainMenuMgr_FILE, "File"); // Z (q, cl)
+// Run Command: PAResourceCommand.PACommandNames_NEW_PROJECT
+// f (cl): New Project: addNotify
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// Elapsed time: 21 seconds
+setText(PAResourceOtoP.ProjectNameChooser_PROJECT_NAME, "uart", true); // Y (Q, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectButton("BACK", "< Back"); // JButton (j, f)
+selectCheckBox(PAResourceItoN.NewProjectWizard_DO_NOT_SPECIFY_SOURCES_AT_THIS_TIME, "Do not specify sources at this time", true); // g (a, f): TRUE
+selectCheckBox(PAResourceItoN.NewProjectWizard_DO_NOT_SPECIFY_SOURCES_AT_THIS_TIME, "Do not specify sources at this time", false); // g (a, f): FALSE
+selectButton("NEXT", "Next >"); // JButton (j, f)
+selectTab(PAResourceOtoP.PartChooser_TABBED_PANE, (HResource) null, "Boards", 1); // i (T, f)
+setText("PAResourceAtoD.BoardChooser_BOARD_TABLE_SEARCH_FIELD", "b"); // OverlayTextField (P, f)
+selectTable(PAResourceAtoD.BoardChooser_BOARD_TABLE, "Basys3 ; Basys3 ; digilentinc.com ; 1.1 ; xc7a35tcpg236-1 ; 236 ; C.0 ; 106 ; 20800 ; 41600 ; 50 ; 0 ; 90 ; 2 ; 2 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 0 ; 1 ; 5 ;  ;  ;  ;  ; 0.95 ; 0.95 ; 1.05", 1, "Basys3", 0); // d (O, f)
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// [GUI Memory]: 191 MB (+28750kb) [00:14:21]
+selectButton("NEXT", "Next >"); // JButton (j, f)
+// TclEventType: PROJECT_CLOSE
+// HMemoryUtils.trashcanNow. Engine heap size: 1,992 MB. GUI used memory: 83 MB. Current time: 10/13/20, 6:53:43 AM MDT
+// TclEventType: TIMING_RESULTS_UNLOAD
+// Engine heap size: 1,993 MB. GUI used memory: 104 MB. Current time: 10/13/20, 6:53:43 AM MDT
+// TclEventType: DESIGN_CLOSE
+// by (f):  Create Project : addNotify
+selectButton("OptionPane.button", "Yes"); // JButton (A, H)
+// Tcl Message: close_project 
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_ADD
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// WARNING: HEventQueue.dispatchEvent() is taking  1062 ms.
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// Tcl Message: create_project uart /home/op/fpga/one/uart -part xc7a35tcpg236-1 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/tools/Xilinx/Vivado/2019.1/data/ip'. 
+// TclEventType: FILE_SET_OPTIONS_CHANGE
+// TclEventType: BOARD_MODIFIED
+// Tcl Message: set_property board_part digilentinc.com:basys3:part0:1.1 [current_project] 
+selectButton("FINISH", "Finish"); // JButton (j, f)
+// 'g' command handler elapsed time: 67 seconds
+dismissDialog("Create Project"); // by (f)
+dismissDialog("New Project"); // f (cl)
+// HMemoryUtils.trashcanNow. Engine heap size: 1,901 MB. GUI used memory: 61 MB. Current time: 10/13/20, 7:23:46 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,875 MB. GUI used memory: 54 MB. Current time: 10/13/20, 7:53:48 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,875 MB. GUI used memory: 88 MB. Current time: 10/13/20, 9:38:39 AM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1238 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 10:08:40 AM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 1:02:59 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 1:33:00 PM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  466295 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 2:07:15 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 2:37:15 PM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  2575493 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 3:20:38 PM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  13374309 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 7:03:35 PM MDT
+// WARNING: HEventQueue.dispatchEvent() is taking  1206 ms.
+// HMemoryUtils.trashcanNow. Engine heap size: 1,874 MB. GUI used memory: 53 MB. Current time: 10/13/20, 7:33:36 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,873 MB. GUI used memory: 53 MB. Current time: 10/13/20, 8:03:36 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,873 MB. GUI used memory: 53 MB. Current time: 10/13/20, 8:33:36 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,873 MB. GUI used memory: 53 MB. Current time: 10/13/20, 9:03:36 PM MDT
+// HMemoryUtils.trashcanNow. Engine heap size: 1,873 MB. GUI used memory: 53 MB. Current time: 10/13/20, 9:33:36 PM MDT

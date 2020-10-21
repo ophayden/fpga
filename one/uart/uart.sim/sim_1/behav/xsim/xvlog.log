@@ -1,0 +1,11 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/op/fpga/UART_232/src/UART_baudrate_generator.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_BaudRate_generator
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/op/fpga/UART_232/src/UART_rx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_rs232_rx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/op/fpga/UART_232/src/UART_tx.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module UART_rs232_tx
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/op/fpga/UART_232/src/TOP.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module TOP
+WARNING: [VRFC 10-2379] empty port in module declaration [/home/op/fpga/UART_232/src/TOP.v:7]
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/op/fpga/one/uart/uart.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
