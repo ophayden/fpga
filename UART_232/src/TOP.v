@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module TOP(
-    	Clk                     ,
-    	Rst_n                   ,   
+	Clk                     ,
+	Rst_n                   ,   
    	Rx                      ,    
     	Tx                      ,
 	RxData		        ,
@@ -34,20 +34,20 @@ assign 		NBits = 4'b1000	;	//We send/receive 8 bits
 UART_rs232_rx I_RS232RX(
     	.Clk(Clk)             	,
    	.Rst_n(Rst_n)         	,
-    	.RxEn(RxEn)           	,
-    	.RxData(RxData)       	,
-    	.RxDone(RxDone)       	,
-    	.Rx(Rx)               	,
-    	.Tick(tick)           	,
-    	.NBits(NBits)
+    .RxEn(RxEn)           	,
+    .RxData(RxData)       	,
+    .RxDone(RxDone)       	,
+    .Rx(Rx)               	,
+    .Tick(tick)           	,
+    .NBits(NBits)
     );
 
 //Make connections between Tx module and TOP inputs and outputs and the other modules
 UART_rs232_tx I_RS232TX(
    	.Clk(Clk)            	,
-    	.Rst_n(Rst_n)         	,
-    	.TxEn(TxEn)           	,
-    	.TxData(TxData)      	,
+    .Rst_n(Rst_n)         	,
+    .TxEn(TxEn)           	,
+    .TxData(TxData)      	,
    	.TxDone(TxDone)      	,
    	.Tx(Tx)               	,
    	.Tick(tick)           	,
@@ -56,10 +56,10 @@ UART_rs232_tx I_RS232TX(
 
 //Make connections between tick generator module and TOP inputs and outputs and the other modules
 UART_BaudRate_generator I_BAUDGEN(
-    	.Clk(Clk)               ,
-    	.Rst_n(Rst_n)           ,
-    	.Tick(tick)             ,
-    	.BaudRate(BaudRate)
+    .Clk(Clk)               ,
+    .Rst_n(Rst_n)           ,
+    .Tick(tick)             ,
+    .BaudRate(BaudRate)
     );
 
 
