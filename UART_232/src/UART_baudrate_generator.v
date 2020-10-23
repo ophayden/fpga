@@ -1,16 +1,14 @@
 `timescale 1ns / 1ps
+
 module UART_BaudRate_generator(
-    Clk                   ,
-    Rst_n                 ,
-    Tick                  ,
-    BaudRate
+    input           Clk,                  
+    input           Rst_n,                
+    input [15:0]    BaudRate,            
+    output          Tick,                 
     );
 
-input           Clk                 ; 
-input           Rst_n               ; 
-input [15:0]    BaudRate            ; 
-output          Tick                ; 
-reg [15:0]      baudRateReg         ;
+
+reg [15:0]      baudRateReg;
  
 
 always @(posedge Clk or negedge Rst_n)
