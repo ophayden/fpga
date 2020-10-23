@@ -1,7 +1,7 @@
 `timescale 1ns / 1ps
 module TOP(
-	Clk                     ,
-	Rst_n                   ,   
+	Clk,
+	Rst_n,   
    	Rx                      ,    
     Tx                      ,
 	RxData		            ,
