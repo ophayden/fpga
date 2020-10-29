@@ -2,9 +2,9 @@
 module TOP(
 	Clk,
 	Rst_n,   
-   	Rx                      ,    
-    Tx                      ,
-	RxData		            ,
+   	Rx,    
+    Tx,
+	RxData,
 	);
 
 input           Clk         ; 

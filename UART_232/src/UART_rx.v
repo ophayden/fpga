@@ -1,37 +1,33 @@
 `timescale 1ns / 1ps
-module UART_rs232_rx (Clk,Rst_n,RxEn,RxData,RxDone,Rx,Tick,NBits);		//Define my module as UART_rs232_rx
+module UART_rs232_rx (Clk,Rst_n,RxEn,RxData,RxDone,Rx,Tick,NBits);		
 
-input Clk, Rst_n, RxEn,Rx,Tick;		//Define 1 bit inputs
-input [3:0]NBits;			//Define 4 bits inputs
-
-
-output RxDone;				//Define 1 bit output
-output [7:0]RxData;			//Define 8 bits output (this will eb the 1byte received data)
+input Clk, Rst_n, RxEn,Rx,Tick;		
+input [3:0]NBits;			
 
 
-//Variabels used for state machine...
-parameter  IDLE = 1'b0, READ = 1'b1; 	//We haev 2 states for the State Machine state 0 and 1 (READ adn IDLE)
-reg [1:0] State, Next;			//Create some registers for the states
-reg  read_enable = 1'b0;		//Variable that will enable or NOT the data in read
-reg  start_bit = 1'b1;			//Variable used to notify when the start bit was detected (first falling edge of RX)
-reg  RxDone = 1'b0;			//Variable used to notify when the data read process is done
-reg [4:0]Bit = 5'b00000;		//Variable used for the bit by bit read loop (in this case 8 bits so 8 loops)
-reg [3:0] counter = 4'b0000;		//Counter variable used to count the tick pulses up to 16
-reg [7:0] Read_data= 8'b00000000;	//Register where we store the Rx input bits before assigning it to the RxData output
-reg [7:0] RxData;			//We register the output as well so we store the value
+output RxDone;				
+output [7:0]RxData;			
 
+
+parameter  IDLE = 1'b0, READ = 1'b1; 	
+reg [1:0] State, Next;			
+reg  read_enable = 1'b0;		
+reg  start_bit = 1'b1;			
+reg  RxDone = 1'b0;			
+reg [4:0]Bit = 5'b00000;		
+reg [3:0] counter = 4'b0000;		
+reg [7:0] Read_data= 8'b00000000;	
+reg [7:0] RxData;			
 
 
 
 
-///////////////////////////////STATE MACHINE////////////////////////////////
-////////////////////////////////////////////////////////////////////////////
-///////////////////////////////////Reset////////////////////////////////////
-////////////////////////////////////////////////////////////////////////////
-always @ (posedge Clk or negedge Rst_n)			//It is good to always have a reset always
+
+
+always @ (posedge Clk or negedge Rst_n)			
 begin
-if (!Rst_n)	State <= IDLE;				//If reset pin is low, we get to the initial state which is IDLE
-else 		State <= Next;				//If not we go to the next state
+if (!Rst_n)	State <= IDLE;				
+else 		State <= Next;				
 end
 
 
