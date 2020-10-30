@@ -1,6 +1,6 @@
 `timescale 1ns / 1ps
 
-module UART_BaudRate_generator(
+module UART_BaudRate_generatoor(
     input           Clk,                  
     input           Rst_n,                
     input [15:0]    BaudRate,            
