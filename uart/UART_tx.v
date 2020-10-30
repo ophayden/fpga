@@ -7,9 +7,6 @@ input [7:0]TxData;
 output Tx;
 output TxDone;
 
-
-
-
 parameter  IDLE = 1'b0, WRITE = 1'b1;	
 reg  State, Next;			
 reg  TxDone = 1'b0;			
@@ -24,16 +21,11 @@ reg [1:0] R_edge;
 wire D_edge;				
 
 
-
-
 always @ (posedge Clk or negedge Rst_n)			
 begin
 if (!Rst_n)	State <= IDLE;		
 else 		State <= Next;	
 end
-
-
-
 
 
 always @ (State or D_edge or TxData or TxDone) 
@@ -45,8 +37,6 @@ begin
 	default 			Next = IDLE;
     endcase
 end
-
-
 
 
 always @ (State)
@@ -61,11 +51,6 @@ begin
 	end
     endcase
 end
-
-
-
-
-
 
 
 always @ (posedge Tick)
@@ -129,14 +114,6 @@ begin
 end
 
 
-
-////////////////////////////////////////////////////////////////////////////
-////////////////////////////Input enable detect/////////////////////////////
-////////////////////////////////////////////////////////////////////////////
-/*Here we detect if there was a reset or if the TxEn was activated.
-If "TxEn" was actiavted than we start the write process and we will send
-the data that is on the "TxData" input so amke sure that in the 
-moment you activate "TxEn" the TxData" has the values you want to send . */
 always @ (posedge Clk or negedge Rst_n)
 begin
 
