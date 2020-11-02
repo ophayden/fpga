@@ -56,7 +56,7 @@ end
 always @ (posedge Tick)
 begin
 
-	if (!write_enable)begin 				
+	if (!write_enable)begin			
 	TxDone = 1'b0;
 	start_bit <=1'b1;
 	stop_bit <= 1'b0;
