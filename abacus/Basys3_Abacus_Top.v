@@ -1,16 +1,5 @@
 `timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: Digilent Inc.
-// Engineer: Varun Kondagunturi
-// 
-// Create Date:    17:08:26 06/12/2014 
-// Design Name: 
-// Module Name:    Abacus_Top_Module 
-// Project Name: 
-// Target Devices: 
-// Tool versions: 
-//
-//
+
 // Description: 
 //This is the Top-Level Source file for the Abacus Project. 
 //Slide switches provide two 8-bit binary inputs A and B. 
@@ -24,15 +13,7 @@
 //btnR: Quotient(Division Operation). Press and Hold the button to display result
 //btnL: Remainder ( Division Operation). Press and Hold the button to display result
 //Output is displayed on the 7 segment LED display. 
-//
-//
-// Dependencies: 
-//
-// Revision: 
-// Revision 0.01 - File Created
-// Additional Comments: 
-//
-//////////////////////////////////////////////////////////////////////////////////
+
  module Basys3_Abacus_Top(
 
 //CLK Input

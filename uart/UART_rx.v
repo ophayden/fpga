@@ -19,20 +19,11 @@ reg [3:0] counter = 4'b0000;
 reg [7:0] Read_data= 8'b00000000;	
 reg [7:0] RxData;			
 
-
-
-
-
-
 always @ (posedge Clk or negedge Rst_n)			
 begin
 if (!Rst_n)	State <= IDLE;				
 else 		State <= Next;				
 end
-
-
-
-
 
 always @ (State or Rx or RxEn or RxDone)
 begin
@@ -44,12 +35,6 @@ begin
 	default 			Next = IDLE;
     endcase
 end
-
-
-
-
-
-
 
 always @ (State or RxDone)
 begin
@@ -63,11 +48,6 @@ begin
 	      end
     endcase
 end
-
-
-
-
-
 
 always @ (posedge Tick)
 
@@ -105,11 +85,6 @@ always @ (posedge Tick)
 end
 
 
-////////////////////////////////////////////////////////////////////////////
-//////////////////////////////Output assign/////////////////////////////////
-////////////////////////////////////////////////////////////////////////////
-/*Finally, we assign the Read_data register values to the RxData output and
-that will be our final received value.*/
 always @ (posedge Clk)
 begin
 
